@@ -12,6 +12,7 @@
             src="@/assets/Check.png"
             alt="checkmark"
             @click="done(index)"
+            :style="!todo.complete ? 'opacity: 1' : 'opacity: 0.5'"
           />
           <img
             class="bin"
