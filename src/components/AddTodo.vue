@@ -1,8 +1,8 @@
 <template>
   <div class="addTodo">
     <form @submit.prevent="add">
-      <input type="text" placeholder="Add task..." v-model="todo" />
-      <button>Add</button>
+      <input type="text" placeholder="Lägg till syssla" v-model="todo" />
+      <button>Lägg Till</button>
     </form>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
         title: this.todo,
         complete: false,
       };
-      this.todo = "";
+      this.todo = '';
       this.$store.dispatch("addTodo", todo);
     },
   },
